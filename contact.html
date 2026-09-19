@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Champions League</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p id="site-title">Champions League Fan Hub</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact and Club Records</h1>
+
+        <section>
+      <h2>Most Successful Clubs</h2>
+      <table>
+        <caption>Most successful clubs in UEFA Champions League history (European Cup era included)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Club</th>
+            <th scope="col">Country</th>
+            <th scope="col">Titles Won</th>
+            <th scope="col">First Title</th>
+            <th scope="col">Most Recent Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Real Madrid</th>
+            <td rowspan="2">Spain</td>
+            <td>15</td>
+            <td>1956</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <th scope="row">Barcelona</th>
+            <td>5</td>
+            <td>1992</td>
+            <td>2015</td>
+          </tr>
+          <tr>
+            <th scope="row">AC Milan</th>
+            <td rowspan="2">Italy</td>
+            <td>7</td>
+            <td>1963</td>
+            <td>2007</td>
+          </tr>
+          <tr>
+            <th scope="row">Inter Milan</th>
+            <td>3</td>
+            <td>1964</td>
+            <td>2010</td>
+          </tr>
+          <tr>
+            <th scope="row">Liverpool</th>
+            <td>England</td>
+            <td>6</td>
+            <td>1977</td>
+            <td>2019</td>
+          </tr>
+          <tr>
+            <th scope="row">Bayern Munich</th>
+            <td>Germany</td>
+            <td>6</td>
+            <td>1974</td>
+            <td>2020</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Combined total (these 6 clubs)</th>
+            <td>42</td>
+            <td colspan="2">-</td>
+          </tr>
+        </tfoot>
+        </table>
+    </section>
+
+    <section>
+      <h2>Fan Ticket Inquiry</h2>
+      <form>
+        <fieldset>
+          <legend>Fan Ticket Inquiry</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. John Smith" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="tickets">Number of Tickets</label>
+          <input type="number" id="tickets" name="tickets" min="1" max="10" value="1">
+
+          <label for="match-date">Preferred Match Date</label>
+          <input type="date" id="match-date" name="match-date">
+
+          <input type="radio" id="tier-standard" name="tier" value="standard" checked>
+          <label for="tier-standard">Standard</label>
+          <input type="radio" id="tier-premium" name="tier" value="premium">
+          <label for="tier-premium">Premium</label>
+          <input type="radio" id="tier-vip" name="tier" value="vip">
+          <label for="tier-vip">VIP</label>
+
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" maxlength="300" placeholder="Anything else we should know?"></textarea>
+
+          <button type="submit">Send Inquiry</button>
+        </fieldset>
+        </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Champions League Fan Hub. Created for Assignment 1.</p>
+  </footer>
+
+</body>
+</html>
